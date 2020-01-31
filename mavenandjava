@@ -24,3 +24,18 @@ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk1.8.0_16
 sudo update-alternatives --set java /usr/java/jdk1.8.0_162/bin/java
 sudo update-alternatives --set javac /usr/java/jdk1.8.0_162/bin/javac
 sudo update-alternatives --set javaws /usr/java/jdk1.8.0_162/bin/javaws
+
+
+Gradle Installation :
+---------------------------------------
+vi /etc/profile.d/gradle.sh  --- Put below 2 lines
+export GRADLE_HOME=/usr/gradle-4.2
+export PATH=${GRADLE_HOME}/bin:${PATH}
+
+chmod +x /etc/profile.d/gradle.sh
+source /etc/profile.d/gradle.sh
+gradle -v
+
+echo 'export GRADLE_HOME=/usr/gradle-4.2' >> /root/.bash_profile
+echo 'export GRADLE=$GRADLE_HOME/bin' >> /root/.bash_profile
+echo 'export PATH=$GRADLE:$PATH' >> /root/.bash_profile
