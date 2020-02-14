@@ -39,3 +39,9 @@ gradle -v
 echo 'export GRADLE_HOME=/usr/gradle-4.2' >> /root/.bash_profile
 echo 'export GRADLE=$GRADLE_HOME/bin' >> /root/.bash_profile
 echo 'export PATH=$GRADLE:$PATH' >> /root/.bash_profile
+
+
+-----------------------------------------------------
+
+Selenium Example :
+https://stackoverflow.com/questions/35867102/how-to-work-with-selenium-chrome-driver-in-maven-without-chromedriver-exe
